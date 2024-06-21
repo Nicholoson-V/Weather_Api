@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main_container{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: aqua; */
+    background-image: url(./Assets/starfall.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+
+}
+#card_container{
+    height: 450px; 
+    width: 350px;
+    background-color:rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    box-shadow: 5px 5px 20px white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form{
+    /* border: 2px solid blueviolet; */
+    flex-basis: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+#location{
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    padding-left: 20px;
+}
+input[type="submit"]{
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: blue;
+    color: aliceblue;
+    border: none;
+}
+
+#img_container{
+    /* border: 2px solid blueviolet; */
+    flex-basis: 55%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#img_container,img{ 
+    /* background-image: url(./Assets/weather02-512.webp); */
+    background-size: cover;
+    width: 250px;
+    /* background-color: white; */
+
+}
+#temp_humid{
+    /* border: 2px solid blueviolet; */
+    flex-basis: 25%;
+    width: 100%;
+    display: flex;
+}
+
+#temp,#humid{
+    /* border: 2px solid brown; */
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.heading{
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+}
+.para{
+    font-size: 23px;
+    color: aliceblue;
+}

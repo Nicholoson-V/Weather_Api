@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApi</title>
+    <link rel="shortcut icon" href="./Assets/weather02-512.webp" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main id="main_container">
+        <section id="card_container">
+            <form>
+                <input type="text" id="location" placeholder="Enter your location">
+                <input type="submit" value="Get Weather">
+            </form>
+            <article id="img_container">
+                <img src="./Assets/default.webp" id="weather_image" >
+                
+            </article>
+            <h3 id="weather_condition">NULL</h3>
+           
+            <article id="temp_humid">
+                <aside id="temp">
+                    <h1  class="heading">TEMPERATURE</h1>
+                    <p class="para temp_value"><sup>0</sup>C</p>
+                </aside>
+                <aside id="humid">
+                    <h1 class="heading">HUMIDITY</h1>
+                    <p class="para humid_value"> KMPH</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
